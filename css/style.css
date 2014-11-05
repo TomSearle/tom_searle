@@ -76,12 +76,29 @@ SIZE PRIMITIVES & BLOCKS
 .container {
   width: 100%;
   margin: 0 auto 0 auto;
-  max-width: 1020px; }
+  max-width: 1020px;
+  padding: 0 20px; }
   .container:before, .container:after {
     content: " ";
     display: table; }
   .container:after {
     clear: both; }
+
+.hero--full {
+  height: 100%; }
+
+.hero__title {
+  margin-top: 1.5rem; }
+  .hero__title .h2 {
+    margin-bottom: 10px; }
+
+.hero__subtitle {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.8); }
+
+.background--mountains {
+  background: url("../media/mountains.jpg") 50% 50% no-repeat;
+  background-size: cover; }
 
 .full {
   width: 100%; }
@@ -119,8 +136,39 @@ LAYOUT HELPERS & TEXT MODIFIERS
 .text--white {
   color: #fff; }
 
+.push-down {
+  margin-top: 100px; }
+
 /*===========================
 MAIN THEME
 ============================*/
+.btn--menu {
+  margin-top: 25px; }
+
+.gradient-overlay {
+  background: -webkit-linear-gradient(180deg, rgba(19, 106, 138, 0.8) 10%, rgba(38, 120, 113, 0.8) 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(180deg, rgba(19, 106, 138, 0.8) 10%, rgba(38, 120, 113, 0.8) 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(180deg, rgba(19, 106, 138, 0.8) 10%, rgba(38, 120, 113, 0.8) 90%);
+  /* IE10 */
+  background: -o-linear-gradient(180deg, rgba(19, 106, 138, 0.8) 10%, rgba(38, 120, 113, 0.8) 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(180deg, rgba(19, 106, 138, 0.8) 10%, rgba(38, 120, 113, 0.8) 90%);
+  /* W3C */
+  height: 100%;
+  width: 100%;
+  padding: 50px 0; }
+
+.nav-options {
+  margin-top: 100px; }
+
+.nav-option {
+  height: 150px;
+  padding: 20px 0; }
+
+@media screen and (min-width: 1020px) {
+  .quarter {
+    width: 25%; } }
 
 /*# sourceMappingURL=style.css.map */
