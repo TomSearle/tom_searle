@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5rem; }
+
+/*===========================
+COLOURS
+============================*/
+/*===========================
+TYPOGRAPHICAL SETTINGS (2:5 TYPOGRAPHIC SCALE)
+============================*/
+/*===========================
+TYPOGRAPHY
+============================*/
+.h1 {
+  font-size: 3.375rem;
+  line-height: 4.5rem;
+  margin: 3rem 0 1.5rem 0; }
+
+.h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  margin: 3rem 0 1.5rem 0; }
+
+.h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0; }
+
+.h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0; }
+
+ul, ol {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+
+a {
+  text-decoration: none;
+  color: #267871; }
+
+/*===========================
+SIZE PRIMITIVES & BLOCKS
+============================*/
+.section:before, .section:after {
+  content: " ";
+  display: table; }
+.section:after {
+  clear: both; }
+
+.section--padded {
+  padding: 50px 0; }
+
+.container {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  max-width: 1020px; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+
+.full {
+  width: 100%; }
+
+.three-quarters {
+  width: 100%; }
+
+.half {
+  width: 100%; }
+
+.third {
+  width: 100%; }
+
+.quarter {
+  width: 100%; }
+
+img {
+  max-width: 100%; }
+
+.media-holder {
+  text-align: center; }
+
+/*===========================
+LAYOUT HELPERS & TEXT MODIFIERS
+============================*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.align-center {
+  text-align: center; }
+
+.text--white {
+  color: #fff; }
+
+/*===========================
+MAIN THEME
+============================*/
+
+/*# sourceMappingURL=style.css.map */
