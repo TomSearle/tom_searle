@@ -7,7 +7,7 @@
 			<div class="portfolio-item left third">
 				<div class="media-holder">
 					<img src="{{ item.thumbnail.src }}" alt="{{ item.title }}">
-					<p>{{ item.title }}</p>
+					<a href="{{ item.permalink }}"><p>{{ item.title }}</p></a>
 				</div>
 			</div>
 		{% endfor %}

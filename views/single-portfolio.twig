@@ -1,0 +1,11 @@
+{# single portfolio post #}
+{% extends 'base.twig' %}
+{% block content %}
+I AM A SINGLE PORTFOLIO POST FOR THE POST {{ post.title }}
+
+{% if portfolio %}
+	{% for item in portfolio %}
+		<div class="left"><a href="{{ item.permalink }}">{{ item.title }}</a></div>
+	{% endfor %}
+{% endif %}
+{% endblock %}
