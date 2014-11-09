@@ -137,7 +137,7 @@ LAYOUT HELPERS & TEXT MODIFIERS
   color: #fff; }
 
 .push-down {
-  margin-top: 100px; }
+  margin-top: 200px; }
 
 /*===========================
 MAIN THEME
@@ -224,6 +224,12 @@ MAIN THEME
   color: rgba(255, 255, 255, 0.3);
   margin: 0 0 0 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 @media screen and (min-width: 1020px) {
   .quarter {
