@@ -1,7 +1,7 @@
 (function(){
 	var menuBtn = document.getElementsByClassName('btn--menu')[0];
 	var menu = document.getElementsByClassName('menu')[0];
-	var main = document.getElementsByClassName('main')[0];
+	var main = document.getElementsByTagName('body')[0];
 
 	menuBtn.addEventListener('click',function(e){
 		//Stop the event from bubbling up the dom
@@ -26,14 +26,13 @@
 	var header = document.getElementsByClassName('header')[0];
 	var headerCoords = header.getBoundingClientRect();
 
-	main.addEventListener('scroll',function(e){
-		console.log(e);
+	viewport.addEventListener('scroll',function(e){
 		if ( viewport.scrollY >= headerCoords.top + 50) {
 			apollo.addClass(header, 'header--is-scrolled');
 		} else {
 			apollo.removeClass(header, 'header--is-scrolled');
 		}
-	}, true);
+	}, false);
 
 
 
