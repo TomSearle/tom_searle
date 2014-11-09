@@ -20,6 +20,21 @@
 
 	}, false);
 
+	//Logic for checking scrolling for the header
+
+	var viewport = window;
+	var header = document.getElementsByClassName('header')[0];
+	var headerCoords = header.getBoundingClientRect();
+
+	main.addEventListener('scroll',function(e){
+		console.log(e);
+		if ( viewport.scrollY >= headerCoords.top + 50) {
+			apollo.addClass(header, 'header--is-scrolled');
+		} else {
+			apollo.removeClass(header, 'header--is-scrolled');
+		}
+	}, true);
+
 
 
 }());

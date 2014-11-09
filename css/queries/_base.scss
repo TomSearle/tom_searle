@@ -223,6 +223,7 @@ MAIN THEME
 	top:0;
 	left:0;
 	overflow-y: scroll;
+	background: #fff;
 }
 
 .btn--menu {
@@ -285,6 +286,10 @@ MAIN THEME
 	&.open ~ .main {
 		@include transform(translateX(-240px));
 	}
+
+	&.open + .header {
+		@include transform(translateX(-240px));
+	}
 }
 
 .menu__title {
@@ -295,8 +300,17 @@ MAIN THEME
 }
 
 .header {
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
+	z-index: 15;
 	width: 100%;
+	@include transition(all 0.5s);
+	@include transform(translateX(0));
+	padding: 50px 0;
+}
+
+.header--is-scrolled {
+	padding: 0;
+	background: $d_blue;
 }

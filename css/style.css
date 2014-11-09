@@ -158,7 +158,8 @@ MAIN THEME
   position: fixed;
   top: 0;
   left: 0;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  background: #fff; }
 
 .btn--menu {
   margin-top: 25px;
@@ -218,6 +219,12 @@ MAIN THEME
     -ms-transform: translateX(-240px);
     -o-transform: translateX(-240px);
     transform: translateX(-240px); }
+  .menu.open + .header {
+    -webkit-transform: translateX(-240px);
+    -moz-transform: translateX(-240px);
+    -ms-transform: translateX(-240px);
+    -o-transform: translateX(-240px);
+    transform: translateX(-240px); }
 
 .menu__title {
   padding: 15px 20px;
@@ -226,10 +233,26 @@ MAIN THEME
   border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
+  z-index: 15;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  padding: 50px 0; }
+
+.header--is-scrolled {
+  padding: 0;
+  background: #39455A; }
 
 @media screen and (min-width: 1020px) {
   .quarter {
