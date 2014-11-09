@@ -215,15 +215,10 @@ MAIN THEME
 ============================*/
 
 .main {
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	@include transition(all 0.5s);
 	@include transform(translateX(0));
-	position:fixed;
-	top:0;
-	left:0;
-	overflow-y: scroll;
-	background: #fff;
 }
 
 .btn--menu {
@@ -261,6 +256,8 @@ MAIN THEME
 	top:0;
 	right:0;
 	overflow-y: scroll;
+	@include transition(all 0.5s);
+	@include transform(translateX(240px));
 
 	ul {
 		padding: 0 0 0 0;
@@ -281,6 +278,10 @@ MAIN THEME
 				}			
 			}
 		}
+	}
+
+	&.open {
+		@include transform(translateX(0))
 	}
 
 	&.open ~ .main {
