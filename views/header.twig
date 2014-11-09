@@ -7,3 +7,15 @@
 		{{ wp_head }}
 	</head>
 	<body>
+
+	<div class="menu">
+		<ul>
+			<p class="h4 menu__title">Menu</p>
+			{% if menu %}
+				{% for item in menu.get_items %}
+					<li><a href="{{ item.permalink }}">{{ item.title }}</a></li>
+				{% endfor %}
+			{% endif %}
+		</ul>
+	</div>
+	<div class="main">
