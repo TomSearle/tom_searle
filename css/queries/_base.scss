@@ -272,7 +272,12 @@ MAIN THEME
 				display: block;
 				padding: 20px;
 				margin: 0 0 0 0;
-				color:#fff;
+				color:rgba(255,255,255,0.3);
+				@include transition(color 0.3s);
+
+				&:hover {
+					color:#fff;
+				}			
 			}
 		}
 	}

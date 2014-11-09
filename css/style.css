@@ -204,7 +204,14 @@ MAIN THEME
         display: block;
         padding: 20px;
         margin: 0 0 0 0;
-        color: #fff; }
+        color: rgba(255, 255, 255, 0.3);
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        -ms-transition: color 0.3s;
+        transition: color 0.3s; }
+        .menu ul li a:hover {
+          color: #fff; }
   .menu.open ~ .main {
     -webkit-transform: translateX(-240px);
     -moz-transform: translateX(-240px);
