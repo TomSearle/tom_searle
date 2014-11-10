@@ -7,3 +7,23 @@
 		{{ wp_head }}
 	</head>
 	<body>
+
+	<div class="menu">
+		<ul>
+			<p class="h4 menu__title">Menu</p>
+			{% if menu %}
+				{% for item in menu.get_items %}
+					<li><a href="{{ item.permalink }}">{{ item.title }}</a></li>
+				{% endfor %}
+			{% endif %}
+		</ul>
+	</div>
+	<header class="header">
+		<div class="container">
+			<h1 class="logo h3 text--white left">Tom Searle</h1>
+			<div class="btn--menu right">
+				<img src="{{ theme.uri }}/media/hamburger.svg" alt="">
+			</div>
+		</div>
+	</header>
+	<div class="main">
